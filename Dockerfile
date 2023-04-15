@@ -5,9 +5,10 @@
 # Name the node stage "builder"
 FROM node:10 AS builder
 # Set working directory
-WORKDIR /KanjiAppFrontend
+WORKDIR /app
 # Copy all files from current directory to working dir in image
 COPY . .
+COPY package.json /app/
 # install node modules and build assets
 RUN npm i && npm run build
 
