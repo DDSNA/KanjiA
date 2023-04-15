@@ -8,7 +8,6 @@ FROM node:10 AS builder
 WORKDIR /app
 # Copy all files from current directory to working dir in image
 COPY . .
-COPY package.json /app/
 # install node modules and build assets
 RUN npm i && npm run build
 
