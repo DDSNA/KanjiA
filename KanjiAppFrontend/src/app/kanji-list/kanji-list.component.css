@@ -1,0 +1,6 @@
+:hover {
+    color: crimson;
+}
+::first-letter {
+    size: +5px;
+}
