@@ -1,0 +1,16 @@
+.footer-check {
+    text-align: center;
+    text-decoration: overline;
+    margin-top: 50px;
+}
+
+.footer-credits {
+    text-align: left;
+    padding-left: 5%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.footer-credits:hover {
+    opacity: 0;
+}

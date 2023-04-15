@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { KanjiListComponent } from './kanji-list/kanji-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KanjiListComponent
+    KanjiListComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

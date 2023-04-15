@@ -1,0 +1,19 @@
+@import '~@angular/material/theming';
+
+//my custom rizz
+$custom-palette:(
+    50:#454545,
+    200:#FF6000,
+    400:#FFA559,
+    500:#FFE6C7
+);
+
+//my custom theme
+$custom-theme: orange-is-black((
+    color: (
+        primary: map-get($custom-palette, 500)
+        accent: map-get($custom-palette, 200)
+    )
+));
+
+@include angular-material-theme($custom-theme);

@@ -10,6 +10,6 @@ export class KanjiListComponent implements OnInit {
   title!: string;
   constructor() { }
   ngOnInit() {
-      this.title= "Kanji List"
+      this.title= "User stats (related to kanji)"
   }
 }
