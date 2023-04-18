@@ -1,0 +1,10 @@
+.warning-alert {
+    color: red;
+    text-align: center;
+    opacity: 1;
+    transition-duration: 5s;
+}
+
+.warning-alert:hover {
+    opacity: 0.5;
+}
