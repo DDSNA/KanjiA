@@ -1,3 +1,7 @@
-:hover {
+.col:hover {
     color: crimson;
+}
+
+.col-2:hover {
+    color: rgb(160, 20, 60);
 }
