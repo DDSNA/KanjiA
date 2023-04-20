@@ -1,21 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Int32 } from 'mongodb';
 
 @Component({
   selector: 'app-debugstatuscomponent',
   templateUrl: './debugstatuscomponent.component.html',
   styleUrls: ['./debugstatuscomponent.component.css']
 })
+
 export class DebugstatuscomponentComponent {
-  serverid = 10;
-  serverstatus = 'offline';
+  serverId: number = 10;
+  serverStatus: string ="online";
 
   getServerStatus(){
-    return this.serverstatus;
+    return this.serverStatus;
   }
-  
-  constructor() { 
-    setTimeout(() => {
-      this.serverstatus='online';
-    }, 2000);
-  }
+
 }
