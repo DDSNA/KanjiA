@@ -12,4 +12,10 @@ export class DebugstatuscomponentComponent {
   getServerStatus(){
     return this.serverstatus;
   }
+  
+  constructor() { 
+    setTimeout(() => {
+      this.serverstatus='online';
+    }, 2000);
+  }
 }
