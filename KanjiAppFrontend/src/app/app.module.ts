@@ -6,6 +6,7 @@ import { KanjiListComponent } from './kanji-list/kanji-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { DebugstatuscomponentComponent } from './debugstatuscomponent/debugstatuscomponent.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     KanjiListComponent,
     FooterComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    DebugstatuscomponentComponent
   ],
   imports: [
     BrowserModule
