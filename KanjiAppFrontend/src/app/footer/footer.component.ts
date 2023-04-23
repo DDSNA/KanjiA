@@ -11,12 +11,13 @@ export class FooterComponent implements OnInit {
     setTimeout(() => {
       this.allowFormRefresh = false;
     }, 2000);
+    console.log('Button Clicked');
   }
 
 constructor() { 
   setTimeout(() => {
     this.allowFormRefresh = true;
-    }, 2000);
+    }, 2500);
   }
   ngOnInit(): void {
       
