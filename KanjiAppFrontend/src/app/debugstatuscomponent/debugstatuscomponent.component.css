@@ -2,5 +2,9 @@
     border: black;
     border-style: groove;
     margin-top: 15px;
-}
+    grid-template-columns: 100 px 50 px 100 px;
+    grid-template-rows:  80px auto 80px;
+    column-gap: 10px;
+    row-gap: 15px;
 
+}
