@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   allowFormRefresh = false;
+  handleClick(){
+    setTimeout(() => {
+      this.allowFormRefresh = false;
+    }, 2000);
+  }
 
 constructor() { 
   setTimeout(() => {
