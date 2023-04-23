@@ -4,18 +4,3 @@
     margin-top: 15px;
 }
 
-.main-div {
-    margin: 0.1rem;
-}
-
-.debug-status-component-div {
-    border: 1px solid black;
-    border-color: red;
-    margin: 0.2rem;
-    nav-left: auto
-};
-
-.debug-status-component-div p {
-    margin: 1em;
-    padding: 1rem;
-};
