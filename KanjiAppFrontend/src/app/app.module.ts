@@ -8,6 +8,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DebugstatuscomponentComponent } from './debugstatuscomponent/debugstatuscomponent.component';
 import { NameInputDisplayComponent } from './name-input-display/name-input-display.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NameInputDisplayComponent } from './name-input-display/name-input-displ
     NameInputDisplayComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

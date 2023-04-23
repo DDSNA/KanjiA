@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NameInputDisplayComponent {
 
-  Username='';
+  Username='Bia';
 
   onUpdateUsername(event: Event) {
     this.Username= (<HTMLInputElement>event.target).value;

@@ -2,6 +2,12 @@
 <h3>Username</h3>
 <input
     type="text"
+    class="form"
+    [ngModel] = "Username"
+>
+    <p>ngModel username input</p>
+<input
+    type="text"
     class="form-control"
     (input)="onUpdateUsername($event)">
     <p>Username: {{Username}}</p>
