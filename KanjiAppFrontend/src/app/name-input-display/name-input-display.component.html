@@ -4,6 +4,7 @@
     type="text"
     class="form-control"
     [(ngModel)] = "Username">
+    <!--making a note here that paranthesis () is a markup that is worth checking right away-->
     <p>ngModel username input</p>
 <input
     type="text"
@@ -11,7 +12,8 @@
     (input)="onUpdateUsername($event)">
     <p>Event input</p>
     <p>Username: {{Username}}</p>
-<button class="btn">
+<button class="btn btn-main"
+    [disabled]="!usernameInputEmpty"
+    (click)="handleClick()">
     Change username
 </button>
-
