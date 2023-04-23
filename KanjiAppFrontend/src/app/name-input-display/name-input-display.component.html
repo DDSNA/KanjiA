@@ -2,14 +2,14 @@
 <h3>Username</h3>
 <input
     type="text"
-    class="form"
-    [ngModel] = "Username"
->
+    class="form-control"
+    [(ngModel)] = "Username">
     <p>ngModel username input</p>
 <input
     type="text"
     class="form-control"
     (input)="onUpdateUsername($event)">
+    <p>Event input</p>
     <p>Username: {{Username}}</p>
 <button class="btn">
     Change username
