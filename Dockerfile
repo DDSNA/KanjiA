@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:latest as builder
+FROM node
 
 # Set the working directory to /app
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Use an official Nginx runtime as a base image
-FROM nginx:latest
+FROM nginx
 
 # Copy the built Angular app from the previous stage to the container
 COPY --from=builder /app/dist/* /usr/share/nginx/html/
